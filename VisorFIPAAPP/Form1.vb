@@ -18,7 +18,7 @@
             'Control de consulta dependiendo el reporte seleccionado como mixto, entradas o salidas
 
             'consulta = "SELECT * FROM Registros_Filling"
-            consulta = "SELECT * FROM Registros_Filling WHERE hora between '" & Fecha_1 & "' and '" & Fecha_2 & "' ORDER BY WO ASC"
+            consulta = "SELECT * FROM Registros_Filling WHERE fecha between '" & Fecha_1 & "' and '" & Fecha_2 & "' ORDER BY WO ASC"
             'MsgBox("el script es:  " & consulta)
             adapt = New Odbc.OdbcDataAdapter(consulta, ConexionSQL.con)
             ConexionSQL.reg = New DataSet
