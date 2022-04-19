@@ -37,28 +37,32 @@ Partial Class Form1
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
+        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button10 = New System.Windows.Forms.Button()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'DataGridView1
@@ -73,10 +77,10 @@ Partial Class Form1
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.DataGridView1.GridColor = System.Drawing.Color.SeaGreen
-        Me.DataGridView1.Location = New System.Drawing.Point(6, 157)
+        Me.DataGridView1.Location = New System.Drawing.Point(6, 155)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.Size = New System.Drawing.Size(955, 364)
+        Me.DataGridView1.Size = New System.Drawing.Size(955, 366)
         Me.DataGridView1.TabIndex = 53
         '
         'Label46
@@ -201,6 +205,7 @@ Partial Class Form1
         'TabPage1
         '
         Me.TabPage1.BackColor = System.Drawing.Color.DarkSeaGreen
+        Me.TabPage1.Controls.Add(Me.GroupBox1)
         Me.TabPage1.Controls.Add(Me.Button2)
         Me.TabPage1.Controls.Add(Me.PictureBox1)
         Me.TabPage1.Controls.Add(Me.Button3)
@@ -245,33 +250,105 @@ Partial Class Form1
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Rates"
         '
-        'PictureBox2
+        'Button8
         '
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(886, 18)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(63, 64)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 71
-        Me.PictureBox2.TabStop = False
+        Me.Button8.BackColor = System.Drawing.Color.White
+        Me.Button8.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button8.Location = New System.Drawing.Point(285, 275)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(91, 26)
+        Me.Button8.TabIndex = 85
+        Me.Button8.Text = "Eliminar"
+        Me.Button8.UseVisualStyleBackColor = False
         '
-        'DataGridView2
+        'Button7
         '
-        Me.DataGridView2.AllowUserToAddRows = False
-        Me.DataGridView2.AllowUserToDeleteRows = False
-        Me.DataGridView2.AllowUserToResizeColumns = False
-        Me.DataGridView2.AllowUserToResizeRows = False
-        Me.DataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
-        Me.DataGridView2.BackgroundColor = System.Drawing.Color.White
-        Me.DataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.DataGridView2.GridColor = System.Drawing.Color.SeaGreen
-        Me.DataGridView2.Location = New System.Drawing.Point(452, 107)
-        Me.DataGridView2.Name = "DataGridView2"
-        Me.DataGridView2.ReadOnly = True
-        Me.DataGridView2.Size = New System.Drawing.Size(411, 435)
-        Me.DataGridView2.TabIndex = 72
+        Me.Button7.BackColor = System.Drawing.Color.White
+        Me.Button7.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button7.Location = New System.Drawing.Point(174, 233)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(91, 26)
+        Me.Button7.TabIndex = 84
+        Me.Button7.Text = "Nuevo"
+        Me.Button7.UseVisualStyleBackColor = False
+        '
+        'Button6
+        '
+        Me.Button6.BackColor = System.Drawing.Color.White
+        Me.Button6.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button6.Location = New System.Drawing.Point(285, 233)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(91, 26)
+        Me.Button6.TabIndex = 83
+        Me.Button6.Text = "Actualizar"
+        Me.Button6.UseVisualStyleBackColor = False
+        '
+        'Button5
+        '
+        Me.Button5.BackColor = System.Drawing.Color.White
+        Me.Button5.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button5.Location = New System.Drawing.Point(64, 233)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(91, 26)
+        Me.Button5.TabIndex = 82
+        Me.Button5.Text = "Agregar"
+        Me.Button5.UseVisualStyleBackColor = False
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(218, 193)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(52, 20)
+        Me.Label5.TabIndex = 81
+        Me.Label5.Text = "RATE"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(136, 152)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(134, 20)
+        Me.Label4.TabIndex = 80
+        Me.Label4.Text = "PRESENTACION"
+        '
+        'TextBox4
+        '
+        Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox4.Location = New System.Drawing.Point(285, 190)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(91, 26)
+        Me.TextBox4.TabIndex = 79
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox3.Location = New System.Drawing.Point(285, 149)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(91, 26)
+        Me.TextBox3.TabIndex = 78
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.Location = New System.Drawing.Point(285, 107)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(91, 26)
+        Me.TextBox2.TabIndex = 77
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(452, 75)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(325, 26)
+        Me.TextBox1.TabIndex = 76
         '
         'Button4
         '
@@ -305,105 +382,68 @@ Partial Class Form1
         Me.Label3.TabIndex = 74
         Me.Label3.Text = "ITEM"
         '
-        'TextBox1
+        'DataGridView2
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(452, 75)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(325, 26)
-        Me.TextBox1.TabIndex = 76
+        Me.DataGridView2.AllowUserToAddRows = False
+        Me.DataGridView2.AllowUserToDeleteRows = False
+        Me.DataGridView2.AllowUserToResizeColumns = False
+        Me.DataGridView2.AllowUserToResizeRows = False
+        Me.DataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
+        Me.DataGridView2.BackgroundColor = System.Drawing.Color.White
+        Me.DataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.DataGridView2.GridColor = System.Drawing.Color.SeaGreen
+        Me.DataGridView2.Location = New System.Drawing.Point(452, 107)
+        Me.DataGridView2.Name = "DataGridView2"
+        Me.DataGridView2.ReadOnly = True
+        Me.DataGridView2.Size = New System.Drawing.Size(411, 435)
+        Me.DataGridView2.TabIndex = 72
         '
-        'TextBox2
+        'PictureBox2
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(285, 107)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(91, 26)
-        Me.TextBox2.TabIndex = 77
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(886, 18)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(63, 64)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 71
+        Me.PictureBox2.TabStop = False
         '
-        'TextBox3
+        'Button9
         '
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(285, 149)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(91, 26)
-        Me.TextBox3.TabIndex = 78
+        Me.Button9.BackColor = System.Drawing.Color.White
+        Me.Button9.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button9.Location = New System.Drawing.Point(7, 15)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(173, 28)
+        Me.Button9.TabIndex = 71
+        Me.Button9.Text = "Cargar pastas en estatus 0"
+        Me.Button9.UseVisualStyleBackColor = False
         '
-        'TextBox4
+        'Button10
         '
-        Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(285, 190)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(91, 26)
-        Me.TextBox4.TabIndex = 79
+        Me.Button10.BackColor = System.Drawing.Color.White
+        Me.Button10.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button10.Location = New System.Drawing.Point(7, 44)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(173, 28)
+        Me.Button10.TabIndex = 72
+        Me.Button10.Text = "Cargar pastas todos los estatus"
+        Me.Button10.UseVisualStyleBackColor = False
         '
-        'Label4
+        'GroupBox1
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(136, 152)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(134, 20)
-        Me.Label4.TabIndex = 80
-        Me.Label4.Text = "PRESENTACION"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(218, 193)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(52, 20)
-        Me.Label5.TabIndex = 81
-        Me.Label5.Text = "RATE"
-        '
-        'Button5
-        '
-        Me.Button5.BackColor = System.Drawing.Color.White
-        Me.Button5.FlatAppearance.BorderColor = System.Drawing.Color.Black
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Location = New System.Drawing.Point(64, 233)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(91, 26)
-        Me.Button5.TabIndex = 82
-        Me.Button5.Text = "Agregar"
-        Me.Button5.UseVisualStyleBackColor = False
-        '
-        'Button6
-        '
-        Me.Button6.BackColor = System.Drawing.Color.White
-        Me.Button6.FlatAppearance.BorderColor = System.Drawing.Color.Black
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.Location = New System.Drawing.Point(285, 233)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(91, 26)
-        Me.Button6.TabIndex = 83
-        Me.Button6.Text = "Actualizar"
-        Me.Button6.UseVisualStyleBackColor = False
-        '
-        'Button7
-        '
-        Me.Button7.BackColor = System.Drawing.Color.White
-        Me.Button7.FlatAppearance.BorderColor = System.Drawing.Color.Black
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.Location = New System.Drawing.Point(174, 233)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(91, 26)
-        Me.Button7.TabIndex = 84
-        Me.Button7.Text = "Nuevo"
-        Me.Button7.UseVisualStyleBackColor = False
-        '
-        'Button8
-        '
-        Me.Button8.BackColor = System.Drawing.Color.White
-        Me.Button8.FlatAppearance.BorderColor = System.Drawing.Color.Black
-        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button8.Location = New System.Drawing.Point(285, 275)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(91, 26)
-        Me.Button8.TabIndex = 85
-        Me.Button8.Text = "Eliminar"
-        Me.Button8.UseVisualStyleBackColor = False
+        Me.GroupBox1.Controls.Add(Me.Button9)
+        Me.GroupBox1.Controls.Add(Me.Button10)
+        Me.GroupBox1.Location = New System.Drawing.Point(8, 73)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(184, 76)
+        Me.GroupBox1.TabIndex = 73
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "A.L.T.E.A. DB"
         '
         'Form1
         '
@@ -416,7 +456,7 @@ Partial Class Form1
         Me.MaximizeBox = False
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Visor FIPAAPP"
+        Me.Text = "Visor FIPAAPP 1.1"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabControl1.ResumeLayout(False)
@@ -424,8 +464,9 @@ Partial Class Form1
         Me.TabPage1.PerformLayout()
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -459,4 +500,7 @@ Partial Class Form1
     Friend WithEvents DataGridView2 As DataGridView
     Friend WithEvents Button7 As Button
     Friend WithEvents Button8 As Button
+    Friend WithEvents Button10 As Button
+    Friend WithEvents Button9 As Button
+    Friend WithEvents GroupBox1 As GroupBox
 End Class

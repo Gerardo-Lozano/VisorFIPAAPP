@@ -54,6 +54,7 @@ Partial Class Form2
         Me.ClientSize = New System.Drawing.Size(196, 386)
         Me.Controls.Add(Me.PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form2"
         Me.Opacity = 0.01R
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

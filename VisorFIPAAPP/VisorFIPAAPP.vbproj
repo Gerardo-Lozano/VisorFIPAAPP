@@ -15,7 +15,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>C:\Gerardo Lozano\Desarrollos\Filling Project\Visor FIPAAPP 1.0\</PublishUrl>
+    <PublishUrl>C:\Gerardo Lozano\Desarrollos\Filling Project\Visor FIPAAPP 1.1\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -25,8 +25,8 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>2</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.1.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -110,6 +110,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConexionSQL.vb" />
+    <Compile Include="Conexion_SQL_Altea.vb" />
     <Compile Include="Exportar.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>

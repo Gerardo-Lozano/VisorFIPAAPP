@@ -1,4 +1,5 @@
 ﻿Imports System.Data.Odbc
+Imports System.Data.SqlClient
 
 Public Class Form1
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -247,5 +248,69 @@ Public Class Form1
         End If
 
         con.Close()
+    End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        Conexion_SQL_Retention()
+
+        Try
+
+            'Obtenemos hora y fecha
+            Dim hora As String
+            Dim fecha As String
+            hora = Now.ToString("HH:mm:ss")
+            fecha = Now.ToString("MM/dd/yyyy")
+
+            'Leer tabla de proveedores
+
+            Dim consulta_batch As String
+            Dim lista_batch As Byte
+
+            consulta_batch = "SELECT batch, analyst, status, approve_date, approve_hour, DATEDIFF(HOUR , CONVERT(DATETIME, approve_date) + CONVERT(DATETIME, approve_hour), GETDATE()) as [hour_lapse] FROM batch_route  WHERE status = 0"
+
+            adaptador_a_sql_Muestras = New SqlDataAdapter(consulta_batch, Conexion_SQL_Altea.ConexionSQL_Muestras)
+            Conexion_SQL_Altea.registro_a_sql_Muestras = New DataSet
+            adaptador_a_sql_Muestras.Fill(registro_a_sql_Muestras, "Tabla1")
+            lista_batch = registro_a_sql_Muestras.Tables("Tabla1").Rows.Count
+            DataGridView1.DataSource = registro_a_sql_Muestras.Tables("Tabla1")
+        Catch
+
+        End Try
+
+        'con.Close()
+
+        Button2.Visible = True
+    End Sub
+
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+        Conexion_SQL_Retention()
+
+        Try
+
+            'Obtenemos hora y fecha
+            Dim hora As String
+            Dim fecha As String
+            hora = Now.ToString("HH:mm:ss")
+            fecha = Now.ToString("MM/dd/yyyy")
+
+            'Leer tabla de proveedores
+
+            Dim consulta_batch As String
+            Dim lista_batch As Byte
+
+            consulta_batch = "SELECT * FROM [AlteaDB].[dbo].[batch_route]"
+
+            adaptador_a_sql_Muestras = New SqlDataAdapter(consulta_batch, Conexion_SQL_Altea.ConexionSQL_Muestras)
+            Conexion_SQL_Altea.registro_a_sql_Muestras = New DataSet
+            adaptador_a_sql_Muestras.Fill(registro_a_sql_Muestras, "Tabla1")
+            lista_batch = registro_a_sql_Muestras.Tables("Tabla1").Rows.Count
+            DataGridView1.DataSource = registro_a_sql_Muestras.Tables("Tabla1")
+        Catch
+
+        End Try
+
+        'con.Close()
+
+        Button2.Visible = True
     End Sub
 End Class
